@@ -9,7 +9,15 @@ public class Bike2 {
 
 		// class_Name obj_refenceName=new class_Name();
 
-		
+		Bike2 pulsar = new Bike2("pulsar", "Black");
+		Bike2 CBZ = new Bike2("CBZ", "Red");
+
+		pulsar.displayInfo();
+		CBZ.displayInfo();
+
+		Bike2 ob1 = new Bike2();
+
+		String color2 = ob1.color;
 
 	}
 
