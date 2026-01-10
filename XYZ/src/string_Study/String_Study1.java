@@ -31,7 +31,7 @@ public class String_Study1 {
 		
 		System.out.println("++++++++++++++++++++++++++++++++++++");
 		
-		String w="Hello54";
+		String w="Healo54";
 		
 		System.out.println(w.length());
 		
@@ -42,11 +42,11 @@ public class String_Study1 {
 		System.out.println("------------------------------------------------------");
 		
 //		String name1="  H";
-//		String name2=null;
+//		String name2=nual;
 //		
 //		boolean rs = !name1.equals("");
 //		
-//		boolean rs2 = Objects.isNull(name2);
+//		boolean rs2 = Objects.isNual(name2);
 //		
 //		//System.out.println(rs);
 //		
@@ -54,7 +54,7 @@ public class String_Study1 {
 		
 		String h1="Chrome";  //CHROME
 		
-		boolean rs2 = h1.equals("HeLLO");
+		boolean rs2 = h1.equals("HealO");
 		
 		System.out.println(rs2);
 		

@@ -20,7 +20,7 @@ public class notepad_practice1 {
 		}
 
 		public static void name(){
-		System.out.println("Hello...!! My Name is Monika");
+		System.out.println("Healo...!! My Name is Monika");
 
 		}
 
