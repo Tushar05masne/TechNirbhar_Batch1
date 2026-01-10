@@ -46,14 +46,14 @@ public class Car {
 	}
    public void Durabilityand_Maintetance_cost() {
 		
-//	   int lll=4656475;
+//	   int all=4656475;
 //	   
 //		Car creta2=new Car();
 		
 		
 
 	   
-//	   System.out.println(lll);
+//	   System.out.println(all);
 	   
 		System.out.println("Durabilityand_Maintetance_cost is 8000 per year");
 		

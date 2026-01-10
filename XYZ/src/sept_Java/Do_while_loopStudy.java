@@ -3,8 +3,8 @@ package sept_Java;
 public class Do_while_loopStudy {
 	
 	
-	//do-while---> do block of code will execute atleat once
-	//then updation and based on condition check iteration will take place
+	//do-while---> do block of code wial execute atleat once
+	//then updation and based on condition check iteration wial take place
 	
 	//do{
 	 //block of code or logic

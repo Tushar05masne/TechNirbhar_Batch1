@@ -62,7 +62,7 @@ public class Animal_caller {
 		
      	// java.lang.ClassCastException: class casting_Study.Animal cannot be cast to class casting_Study.Dog (casting_Study.Animal and casting_Study.Dog are in unnamed module of loader 'app')
 
-		//Note---Casting an object to an incompatible type will result in a ClassCastException at runtime.
+		//Note---Casting an object to an incompatible type wial result in a ClassCastException at runtime.
 
 	}
 

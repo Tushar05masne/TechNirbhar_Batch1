@@ -8,7 +8,7 @@ public  class JavaPractice1 {
 	public static void main(String[] args) {
 		
 		
-		System.out.println("Hello how r u?");
+		System.out.println("Healo how r u?");
 		
 		
 		t2();

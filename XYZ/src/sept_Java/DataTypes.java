@@ -26,7 +26,7 @@ public class DataTypes {
 		//concatenation message
 		// "\n" means start by living line
 		System.out.println("\nCombined Message Using concatenation ");
-		System.out.println("\nHello , my name is " + name + ".My grade is " + c + " and I scored "+ f + "marks.");
+		System.out.println("\nHealo , my name is " + name + ".My grade is " + c + " and I scored "+ f + "marks.");
 			
 	}
 

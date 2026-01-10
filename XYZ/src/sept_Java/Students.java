@@ -4,7 +4,7 @@ public class Students {
 	
 	int id;
 	String name;
-	String college_name;
+	String coalege_name;
 	
 
 	public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class Students {
 //		name="Asha";
 //		c="COEP";
 		
-		System.out.println("Student name is "+name+" Id is "+id+" college name is "+c);
+		System.out.println("Student name is "+name+" Id is "+id+" coalege name is "+c);
 	}
 
 }

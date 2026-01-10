@@ -15,7 +15,7 @@ public class Varaibles_Study {
 
 	public static void main(String[] args) {
 
-		System.out.println("hello all");
+		System.out.println("healo all");
 		System.out.println(p);
 
 		z1();
@@ -35,7 +35,7 @@ public class Varaibles_Study {
 		
 		System.out.println("Sum of my global variable is " +sum);
 
-		System.out.println("hello I am z1 method");
+		System.out.println("healo I am z1 method");
 
 	}
 	
@@ -46,7 +46,7 @@ public class Varaibles_Study {
 		int rs = q+c;
 		
 		System.out.println("rs "+rs);
-		System.out.println("hello 23");
+		System.out.println("healo 23");
 	}
 	
 	
@@ -55,7 +55,7 @@ public class Varaibles_Study {
 		int a=23;
 		int s=48;  //local variable 
 		
-		System.out.println("hello I am z2 method");
+		System.out.println("healo I am z2 method");
 		
 		
 
