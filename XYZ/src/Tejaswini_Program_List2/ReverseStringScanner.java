@@ -1,0 +1,25 @@
+package Tejaswini_Program_List2;
+
+import java.util.Scanner;
+
+public class ReverseStringScanner {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();  // take input from user
+
+        String reversed = "";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+
+        System.out.println("Reversed String: " + reversed);
+
+        sc.close();
+
+	}
+
+}
