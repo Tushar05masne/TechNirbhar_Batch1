@@ -10,7 +10,6 @@ public  class JavaPractice1 {
 		
 		System.out.println("Hello how r u?");
 		
-		
 		t2();
 		t1();
 
