@@ -1,0 +1,125 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>OpencartV121</groupId>
+  <artifactId>OpencartV121</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <!-- How to run our Maven project? -> by 3 ways-->
+  <!-- 1. Add plugins 'maven-compiler-plugin' and 'maven-surefire-plugin' in eclipse pom.xml file. We can create Maven project, build it, provide plugins in pom.xml file and run pom.xml file.-> right click-Run as-Maven Test.  -->
+  <!-- 2. If we dont have eclipse,plugins then we have to run our project outside of the eclipse. We need to install Maven on OS level and run our project throgh cmd prompt. -->
+  <!-- On cmd, go to project path by changing directory -> >cd D:\myWork\Testing\Java\workspaces\OpencartV121
+		on that path provide the command ->	>mvn test
+		this will run our project through cmd which is outside eclipse and on the OS level. -->
+  <!-- 3. Through .bat file. Create 'run.bat' file at project level. go to D:\myWork\Testing\Java\workspaces\OpencartV121 path and create run.bat file.
+  		  - In that file, write command which we have provided in cmd.-> cd D:\myWork\Testing\Java\workspaces\OpencartV121
+  		 																mvn test
+  		  - From the folder structure only, run that 'run.bat' file by double clicking on it. It will run our project. -->		
+  <!-- Plugins ->used to build our automation, compile and run the project. -->
+   <build>			
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.15.0</version>
+        </plugin>
+    
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.4</version>
+          <configuration>
+          	<suiteXmlFiles>
+          		<suiteXmlFile>master.xml</suiteXmlFile>     <!-- when we run this file, it will go to the master.xml file and execute it-->   	
+          	</suiteXmlFiles>      							<!-- depends on our requirement, we can change the xml file only-->
+          </configuration>          
+        </plugin>      
+      </plugins>
+    </pluginManagement>
+  </build>
+  
+  <dependencies>
+  <!-- Dependencies are used to download .jar files automatically.  -->
+  
+  		<!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>			<!-- For selenium -->
+		    <version>4.40.0</version>
+		    <scope>compile</scope>
+		</dependency>
+
+		<!-- Source: https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-core</artifactId>			<!-- For creating logfile and generating logs-->
+		    <version>2.25.3</version>
+		    <scope>compile</scope>
+		</dependency>	
+	
+				<!-- Source: https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-api</artifactId>			<!-- For creating logfile and generating logs-->
+		    <version>2.25.3</version>
+		    <scope>compile</scope>
+		</dependency>
+	
+			<!-- Source: https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-slf4j-impl</artifactId>
+		    <version>2.25.3</version>
+		    <scope>compile</scope>
+		</dependency>
+	
+				<!-- Source: https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.21.0</version>
+		    <scope>compile</scope>
+		</dependency>
+		
+				<!-- Source: https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.20.0</version>
+		    <scope>compile</scope>
+		</dependency>
+		
+				<!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>7.12.0</version>
+		    <scope>test</scope>
+		</dependency>
+
+				<!-- Source: https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+		    <groupId>com.aventstack</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>5.1.2</version>
+		    <scope>compile</scope>
+		</dependency>
+		
+			  <!-- Source: https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>	<!-- For microsoft documents like Microsoft excel etc-->
+		    <artifactId>poi</artifactId>			
+		    <version>5.5.1</version>
+		    <scope>compile</scope>
+		</dependency>	
+
+				<!-- Source: https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>5.5.1</version>
+		    <scope>compile</scope>
+		</dependency>
+
+  </dependencies>
+</project>
