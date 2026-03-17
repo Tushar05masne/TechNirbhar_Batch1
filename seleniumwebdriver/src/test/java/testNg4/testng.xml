@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Suite" parallel="tests"> 	<!-- we write here parallel="tests" because we want a parallel execution 
+														of the tests. it will saves the time of testing. if we dont write it then tests will run sequentially one after another.
+														Threadcount=5 means at a time 5 threads run for the execution of the program.
+														2 to 5 threads are allowed. if given above 5 then it will slows down the execution speed of the program. -->
+
+	  <test name="chrometest">  
+	  <parameter name="browser" value="chrome"/>			<!-- parameter and its value which we have to pass to the program at the time of execution.
+	  													we can pass multiple parameters also and those will be taken by the program at the time of execution. -->
+	  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+	    <classes>
+	      <class name="testNg4.ParamTest"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test name="edgetest">  
+	  <parameter name="browser" value="edge"/>
+	  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+
+	    <classes>
+	      <class name="testNg4.ParamTest"/>
+	    </classes>
+	  </test> <!-- Test -->
+	
+	  <test name="firefoxtest">  
+	  <parameter name="browser" value="firefox"/>
+  	  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+	    <classes>
+	      <class name="testNg4.ParamTest"/>
+	    </classes>
+	  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
