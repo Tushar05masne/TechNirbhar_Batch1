@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SauceDemoSuite" verbose="1" parallel="false">
+    <test name="SequentialTests">
+        <classes>
+            <!-- First run LoginTest -->
+            <class name="tests.login_test"/>
+
+            <!-- Then run ProductTest -->
+            <class name="tests.product_test"/>
+            
+		     <class name="tests.checkout_test"/>
+		     
+		     <class name="tests.checkoutinfo_test"/>
+
+            
+        </classes>
+    </test>
+</suite>
