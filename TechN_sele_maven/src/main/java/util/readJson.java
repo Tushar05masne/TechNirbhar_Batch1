@@ -22,12 +22,15 @@ public class readJson {
 		    
 		    //System.out.println(myArray);
 	        
-	        JSONObject employee = obj.getJSONObject("TC2");
+	        JSONObject employee = obj.getJSONObject("TC1");
 
 	        int id = employee.getInt("id");
 	        String name = employee.getString("name");
 	        String role = employee.getString("role");
 	        boolean active = employee.getBoolean("active");
+	        
+	        String eHomePageFormTitle = employee.getString("HomePageFormTitle");
+
 
 	        System.out.println(id + " - " + name + " - " + role + " - " + active);
 		

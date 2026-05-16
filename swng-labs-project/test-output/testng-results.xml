@@ -1,43 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-08T22:27:29 IST" name="SauceDemoSuite" finished-at="2026-05-08T22:27:38 IST" duration-ms="8664">
+  <suite started-at="2026-05-16T10:29:22 IST" name="Default suite" finished-at="2026-05-16T10:29:25 IST" duration-ms="3477">
     <groups>
     </groups>
-    <test started-at="2026-05-08T22:27:29 IST" name="SequentialTests" finished-at="2026-05-08T22:27:38 IST" duration-ms="8664">
-      <class name="tests.checkoutinfo_test">
-        <test-method signature="checkout_continue()[pri:0, instance:tests.checkoutinfo_test@44c03695]" started-at="2026-05-08T22:27:34 IST" name="checkout_continue" finished-at="2026-05-08T22:27:38 IST" duration-ms="3542" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkout_continue -->
-      </class> <!-- tests.checkoutinfo_test -->
+    <test started-at="2026-05-16T10:29:22 IST" name="Default test" finished-at="2026-05-16T10:29:25 IST" duration-ms="3477">
       <class name="tests.login_test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.login_test@1165b38]" started-at="2026-05-08T22:27:22 IST" name="setup" finished-at="2026-05-08T22:27:29 IST" duration-ms="6741" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.login_test@327514f]" started-at="2026-05-16T10:29:10 IST" name="setup" finished-at="2026-05-16T10:29:22 IST" duration-ms="12283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_LoginPage()[pri:0, instance:tests.login_test@1165b38]" started-at="2026-05-08T22:27:29 IST" name="test_LoginPage" finished-at="2026-05-08T22:27:32 IST" duration-ms="2507" status="PASS">
+        <test-method signature="test_LoginPage()[pri:0, instance:tests.login_test@327514f]" started-at="2026-05-16T10:29:22 IST" name="test_LoginPage" finished-at="2026-05-16T10:29:25 IST" duration-ms="2988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_LoginPage -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_test@1165b38]" started-at="2026-05-08T22:27:38 IST" name="close" finished-at="2026-05-08T22:27:38 IST" duration-ms="295" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.login_test@327514f]" started-at="2026-05-16T10:29:26 IST" name="close" finished-at="2026-05-16T10:29:30 IST" duration-ms="3688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- tests.login_test -->
-      <class name="tests.product_test">
-        <test-method signature="Add_product()[pri:0, instance:tests.product_test@1573f9fc]" started-at="2026-05-08T22:27:32 IST" name="Add_product" finished-at="2026-05-08T22:27:32 IST" duration-ms="324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Add_product -->
-      </class> <!-- tests.product_test -->
-      <class name="tests.checkout_test">
-        <test-method signature="checkout_product()[pri:0, instance:tests.checkout_test@6150c3ec]" started-at="2026-05-08T22:27:32 IST" name="checkout_product" finished-at="2026-05-08T22:27:34 IST" duration-ms="2187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkout_product -->
-      </class> <!-- tests.checkout_test -->
-    </test> <!-- SequentialTests -->
-  </suite> <!-- SauceDemoSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

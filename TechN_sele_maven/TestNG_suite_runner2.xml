@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
+
+<suite name="MySuite" parallel="false">
+    <test name="SanitySuite">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="application1Test.Study_TestNG_Annotation2"/>
+            <class name="application1Test.Study_TestNG_Annotation"/>
+            <class name="application1Test.TestNG_Demo"/>
+        </classes>
+    </test>
+</suite>
+
+
