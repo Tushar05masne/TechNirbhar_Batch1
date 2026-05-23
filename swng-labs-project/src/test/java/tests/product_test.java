@@ -7,7 +7,7 @@ import pages.products_page;
 
 public class product_test extends basetest{
 	
-	@Test
+	@Test (dependsOnMethods = {"login_test"})
 	
 	public void Add_product() {
 	products_page product = new products_page(driver);

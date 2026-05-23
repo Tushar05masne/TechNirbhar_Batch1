@@ -9,7 +9,7 @@ import pages.login_page;
 
 public class login_test extends basetest{
 	
-	@Test
+	@Test(priority=1, timeOut = 1000, enabled=true, description= "login with valid credentials")
 	public void test_LoginPage() throws InterruptedException {
 		login_page login = new login_page(driver);
 		Thread.sleep(2000);
