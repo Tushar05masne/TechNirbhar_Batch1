@@ -6,13 +6,17 @@ import org.testng.annotations.Test;
 
 import base.basetest;
 import pages.login_page;
+import utilities.CommonUtil;
 
 public class login_test extends basetest{
 	
 	@Test
 	public void test_LoginPage() throws InterruptedException {
 		login_page login = new login_page(driver);
-		Thread.sleep(2000);
+		
+		
+	//	Thread.sleep(2000);	
+		CommonUtil.implicitWaits_seconds(driver, 20);		
 		login.enter_username();
 		login.enter_password();
 		login.click_login();
