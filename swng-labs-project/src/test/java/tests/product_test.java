@@ -11,7 +11,7 @@ import utilities.CommonUtil;
 
 public class product_test extends basetest{
 	
-	@Test
+	@Test (dependsOnMethods = {"login_test"})
 	
 	public void Add_product() {
 
