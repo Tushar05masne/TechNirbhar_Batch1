@@ -42,7 +42,7 @@ public class basetest {
 	
 	@AfterSuite	
 	public static void close() {
-		driver.quit();
+		//driver.quit();
 	}
 
 }
