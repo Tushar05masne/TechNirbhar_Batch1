@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-23T10:25:56 IST" name="Default suite" finished-at="2026-05-23T10:25:58 IST" duration-ms="1811">
+  <suite started-at="2026-05-28T09:38:16 IST" name="Default suite" finished-at="2026-05-28T09:38:19 IST" duration-ms="3037">
     <groups>
     </groups>
-    <test started-at="2026-05-23T10:25:56 IST" name="Default test" finished-at="2026-05-23T10:25:58 IST" duration-ms="1811">
-      <class name="tests.product_test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.product_test@327514f]" started-at="2026-05-23T10:25:46 IST" name="setup" finished-at="2026-05-23T10:25:56 IST" duration-ms="10135" status="PASS">
+    <test started-at="2026-05-28T09:38:16 IST" name="Default test" finished-at="2026-05-28T09:38:19 IST" duration-ms="3037">
+      <class name="tests.loginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.loginTest@fbd1f6]" started-at="2026-05-28T09:38:02 IST" name="setup" finished-at="2026-05-28T09:38:16 IST" duration-ms="14024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Add_product()[pri:0, instance:tests.product_test@327514f]" started-at="2026-05-23T10:25:56 IST" name="Add_product" finished-at="2026-05-23T10:25:58 IST" duration-ms="1514" status="PASS">
+        <test-method signature="positiveLoginTest()[pri:0, instance:tests.loginTest@fbd1f6]" started-at="2026-05-28T09:38:16 IST" name="positiveLoginTest" finished-at="2026-05-28T09:38:19 IST" duration-ms="2394" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Add_product -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tests.product_test@327514f]" started-at="2026-05-23T10:25:58 IST" name="close" finished-at="2026-05-23T10:25:58 IST" duration-ms="17" status="PASS">
+        </test-method> <!-- positiveLoginTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.loginTest@fbd1f6]" started-at="2026-05-28T09:38:19 IST" name="close" finished-at="2026-05-28T09:38:19 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- tests.product_test -->
+      </class> <!-- tests.loginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
