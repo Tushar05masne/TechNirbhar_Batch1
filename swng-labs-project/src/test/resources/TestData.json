@@ -1,0 +1,18 @@
+
+
+{
+	"positiveLoginTest": {
+	    "Username": "standard_user",
+	    "Password": "secret_sauce",
+		"eSwagLab_ProductPageLogo_text": "Swag Labs",
+
+
+	  },
+	  
+	  "TC2": {
+	  	    "Username": "visual_user",
+	  	    "Password": "secret_sauce",
+			"Products":"1"
+	  	  }
+ 
+}
