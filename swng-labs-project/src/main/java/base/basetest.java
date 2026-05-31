@@ -12,11 +12,41 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+import java.io.File;
+import org.apache.commons.io.FileUtils;
+
 public class basetest {
 	
 	protected static WebDriver driver;
 
-    @BeforeSuite	
+	public static  ExtentReports extent;
+	public static ExtentTest test;
+   
+
+    @BeforeSuite
+    public void setup_extentReport() {
+    	// Create the directory if it doesn't exist
+    	try {
+    		String reportDir = "test-output/reports";
+    		FileUtils.forceMkdir(new File(reportDir));
+    	} catch (Exception e) {
+    		e.printStackTrace();
+    	}
+
+    	
+    	ExtentSparkReporter sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output/reports/extent.html");
+    	extent = new ExtentReports();
+    	extent.attachReporter(sparkReporter);
+
+         extent.setSystemInfo("Tester", "Tushar");
+         extent.setSystemInfo("Environment", "QA");
+       
+    }
+    @BeforeClass
 	public static void setup() throws InterruptedException {
     	ChromeOptions options = new ChromeOptions();
 
@@ -41,8 +71,10 @@ public class basetest {
 
 	
 	@AfterSuite	
-	public static void close() {
-		//driver.quit();
-	}
+    public void closeReport() {
+    	if (extent != null) {
+    		extent.flush();
+    	}
+    }
 
 }
